@@ -91,8 +91,8 @@ namespace MFNCheckOut
                             first_name = first_name.Text,
                             last_name = last_name.Text,
                             number = card_number.Text,
-                            type = DropDownList2.Text
-                        }
+                            type = card_type.Text
+                        }   
                     }
                 },
                 payer_info = new PayerInfo
@@ -119,10 +119,12 @@ namespace MFNCheckOut
 
             // ^ Ignore workflow code segment
             #region Track Workflow
-          //  this.flow.RecordResponse(createdPayment);
+            //  this.flow.RecordResponse(createdPayment);
             #endregion
 
             // For more information, please visit [PayPal Developer REST API Reference](https://developer.paypal.com/docs/api/).
+
+            Response.Redirect("WebForm1.aspx");
         }
     }
 }
