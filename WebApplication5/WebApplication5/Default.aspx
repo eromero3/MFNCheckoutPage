@@ -37,7 +37,7 @@
              <p>Please Enter Country: </p>
              <asp:DropDownList ID="country_code" runat="server">
                  <asp:ListItem Value="US">United States</asp:ListItem>
-                 <asp:ListItem Value="CA">Canada</asp:ListItem>
+                 <!--<asp:ListItem Value="CA">Canada</asp:ListItem>-->
              </asp:DropDownList>
              <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ControlToValidate="country_code" runat="server" ErrorMessage="Required Field"></asp:RequiredFieldValidator>
 
